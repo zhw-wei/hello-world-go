@@ -1,5 +1,5 @@
 //文件目录，和java类似
-package main
+package hello
 
 //导入依赖包
 import "fmt"
@@ -7,8 +7,12 @@ import "fmt"
 //全局变量
 var t int = 10
 
+func Main0_base(){
+	main0()
+}
+
 //go run hello.go
-func main(){
+func main0(){
 	fmt.Println("hello world!")
 
 	//变量赋值，支持类型推断
