@@ -2,6 +2,10 @@ package hello
 
 import "fmt"
 
+func Main2_base(){
+	main2()
+}
+
 func main2(){
 	//声明一个数组
 	var balance [5] float32
@@ -24,4 +28,6 @@ func main2(){
 	fmt.Println(ip)
 	//使用指针访问值
 	fmt.Println(*ip)
+
+	Main0_base()
 }
