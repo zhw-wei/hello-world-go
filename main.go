@@ -3,10 +3,15 @@ package main
 import (
 	"fmt"
 	"hello/hello"
+	"hello/helloGorm"
 	"hello/helloSql"
 )
 
 func main() {
+	runGorm()
+}
+
+func runHello() {
 	fmt.Println("hello world")
 
 	fmt.Println("----------")
@@ -18,7 +23,9 @@ func main() {
 	hello.Main2_base()
 
 	fmt.Println("----------")
+}
 
+func runHelloSql() {
 	helloSql.CreateConnect()
 
 	helloSql.InsertUser()
@@ -37,4 +44,10 @@ func main() {
 
 	fmt.Println("----------")
 	helloSql.TransUser()
+}
+
+func runGorm() {
+
+	helloGorm.CreateConnect()
+
 }
