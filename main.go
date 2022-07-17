@@ -1,10 +1,10 @@
-
 package main
 
-import "fmt"
-
-import "hello/hello"
-import "hello/helloSql"
+import (
+	"fmt"
+	"hello/hello"
+	"hello/helloSql"
+)
 
 func main() {
 	fmt.Println("hello world")
@@ -19,6 +19,22 @@ func main() {
 
 	fmt.Println("----------")
 
-	helloSql.ConnectMysql()
+	helloSql.CreateConnect()
 
+	helloSql.InsertUser()
+
+	fmt.Println("----------")
+	helloSql.SelectUser()
+
+	fmt.Println("----------")
+	helloSql.UpdateUser()
+
+	fmt.Println("----------")
+	helloSql.SelectUser()
+
+	fmt.Println("----------")
+	helloSql.DeleteUser()
+
+	fmt.Println("----------")
+	helloSql.TransUser()
 }
