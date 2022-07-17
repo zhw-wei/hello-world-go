@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 	"hello/hello"
+	"hello/helloGin"
 	"hello/helloGorm"
 	"hello/helloSql"
 )
 
 func main() {
-	runGorm()
+	runGin()
 }
 
 func runHello() {
@@ -47,7 +48,9 @@ func runHelloSql() {
 }
 
 func runGorm() {
-
 	helloGorm.CreateConnect()
+}
 
+func runGin() {
+	helloGin.CreateR()
 }
